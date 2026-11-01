@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Isolation Station logo: a balance scale with a smiling x tile alone on one pan">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6e6"/><stop offset="1" stop-color="#e7eaff"/></linearGradient>
+<linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#ffc24d"/></linearGradient></defs>
+<rect x="2" y="2" width="116" height="116" rx="30" fill="url(#bg)"/>
+<rect x="56.5" y="36" width="7" height="58" rx="3.5" fill="#6f79db"/>
+<rect x="34" y="92" width="52" height="10" rx="5" fill="#4b57d1"/>
+<rect x="16" y="33" width="88" height="6" rx="3" fill="#4b57d1"/>
+<g stroke="#8a93d9" stroke-width="1.6"><path d="M27 37 17 70M27 37 37 70M93 37 83 70M93 37 103 70"/></g>
+<path d="M12 70h30c-2 9-8 13-15 13s-13-4-15-13z" fill="#c9cff8" stroke="#8a93d9" stroke-width="1.4"/>
+<path d="M78 70h30c-2 9-8 13-15 13s-13-4-15-13z" fill="#c9cff8" stroke="#8a93d9" stroke-width="1.4"/>
+<circle cx="60" cy="36" r="7" fill="#ffd166" stroke="#e0a82e" stroke-width="2"/>
+<rect x="15.5" y="45" width="23" height="25" rx="7" fill="url(#tile)" stroke="#d99a1e" stroke-width="2"/>
+<text x="27" y="62" text-anchor="middle" font-family="Georgia,Cambria,serif" font-style="italic" font-weight="700" font-size="17" fill="#7a4b00">x</text>
+<circle cx="21" cy="64.5" r="1.8" fill="#ff9aa2" opacity=".8"/><circle cx="33" cy="64.5" r="1.8" fill="#ff9aa2" opacity=".8"/>
+<rect x="80" y="58" width="11" height="12" rx="3.5" fill="#bfe8d4" stroke="#5fb38c" stroke-width="1.4"/>
+<rect x="92" y="58" width="11" height="12" rx="3.5" fill="#f9c9d2" stroke="#d98a99" stroke-width="1.4"/>
+<rect x="86" y="46" width="11" height="12" rx="3.5" fill="#dcd3fb" stroke="#9a88e0" stroke-width="1.4"/>
+<path d="M44 46l1.6 3.6 3.6 1.6-3.6 1.6L44 56.4l-1.6-3.6-3.6-1.6 3.6-1.6z" fill="#ffc24d"/>
+<path d="M8 28l1 2.2 2.2 1-2.2 1L8 34.4l-1-2.2-2.2-1 2.2-1z" fill="#a7b0f0"/>
+</svg>
