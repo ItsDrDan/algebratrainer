@@ -34,7 +34,7 @@ sub,sup{font-size:.62em;line-height:0}
 .tb-streak{font-weight:750;font-size:.9rem;padding:6px 10px;border-radius:10px;background:var(--rose);color:var(--rose-ink);white-space:nowrap}
 .tb-btn{border:1px solid var(--line2);background:#fff;border-radius:11px;padding:7px 12px;font-weight:700;color:#3d4a73;min-height:44px;white-space:nowrap}.tb-btn:hover{background:var(--accent-soft)}
 @media(max-width:900px){.tb-xp{display:none}}
-@media(max-width:640px){:root{--topbar:62px}.tb{gap:8px;padding:0 10px}.tb-brand span{display:none}#course button{padding:6px 11px;font-size:.95rem;min-height:44px}.tb-btn span{display:none}.tb-streak{padding:6px 8px}.cw{display:none}.tb-brand img{width:34px;height:34px}.ctl{width:100%}.ctl select{flex:1;min-width:0}.answer input{width:min(200px,48vw)}.badges{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){:root{--topbar:62px}.tb{gap:8px;padding:0 10px}.tb-brand span{display:none}#course button{padding:6px 11px;font-size:.95rem;min-height:44px}.tb-btn span{display:none}.tb-streak{padding:6px 8px}.cw{display:none}.tb-brand img{width:34px;height:34px}.ctl select{flex:1;min-width:0}.answer input{width:min(200px,48vw)}.badges{grid-template-columns:1fr 1fr}}
 
 /* ---------- page ---------- */
 .wrap{max-width:1180px;margin:auto;padding:22px 16px 56px}
@@ -48,15 +48,15 @@ sub,sup{font-size:.62em;line-height:0}
 .howto{list-style:none;margin:8px 0 14px;padding:0;display:flex;gap:8px;flex-wrap:wrap}.howto li{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px 6px 6px;font-size:.95rem;color:#38446a}.howto i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.85rem;flex:none}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:18px}
 .section{margin-top:16px}
-.controls{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;padding:12px 14px;margin-bottom:14px}
-.controls label.lbl{font-size:.8rem;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
-.ctl{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-#levels button{min-height:44px;padding:7px 14px}#levels button small{font-weight:600;opacity:.75}
+
+
+
+
 select{border:1px solid var(--line2);border-radius:11px;padding:8px 10px;background:#fff;min-height:44px;max-width:100%}
-.switch{display:flex;align-items:center;gap:8px;font-weight:650;cursor:pointer;min-height:44px}.switch input{width:22px;height:22px;accent-color:var(--accent)}
+
 
 /* ---------- game card ---------- */
-.game-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
 .eq-tag{display:inline-block;font-size:.78rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .goal{font-size:1.18rem;font-weight:650;margin:0}
 .var-t{color:var(--gold);font-weight:800}
@@ -78,28 +78,70 @@ select{border:1px solid var(--line2);border-radius:11px;padding:8px 10px;backgro
 .fr{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 .12em}
 .fr>span{display:inline-flex;align-items:center;gap:.25em;padding:.08em .12em}.fr>b{height:2px;background:var(--ink);align-self:stretch;margin:2px 0;border-radius:1px}
 .num{font-family:var(--serif)}
+.stage sup,.formula sup,.work sup,.coach sup,.sheet-eq sup{vertical-align:.7em}
+.pw{white-space:nowrap;display:inline-block}.pw>sup{margin-left:.05em;vertical-align:.75em!important;font-size:.62em;line-height:0}.pw>.pr{vertical-align:middle}
+.pr{position:relative;display:inline-flex;align-items:center;vertical-align:middle;margin:0 .05em;padding:0 .38em}.pr>.pi{display:inline-flex;align-items:center;gap:.25em;padding:.08em .04em}
+.pl{position:absolute;top:0;bottom:0;width:.36em;height:100%}.pr>.pl:first-child{left:0}.pr>.pl:last-child{right:0}
+.pl path,.rs path{fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round}
+.rt{position:relative;display:inline-flex;align-items:center;vertical-align:middle;white-space:nowrap;margin:0 .06em;padding-left:.68em}
+.rs{position:absolute;left:0;top:0;bottom:0;width:.7em;height:100%}
+.rti{border-top:1.6px solid currentColor;padding:.2em .15em .06em .12em;display:inline-flex;align-items:center;gap:.25em}
 .last{margin-top:8px;min-height:1.5em;color:var(--muted);font-size:.95rem}
 .coach{margin-top:8px;border-radius:var(--r-md);padding:10px 14px;font-size:1rem;background:#f7f8fc;border:1px solid var(--line);min-height:46px}
 .coach.good{background:var(--mint);border-color:var(--mint-line);color:#1d5c41}.coach.warn{background:var(--amber);border-color:var(--amber-line);color:#6b4f12}.coach.bad{background:var(--rose);border-color:var(--rose-line);color:#7d2637}.coach.info{background:var(--accent-soft);border-color:#c9cff8;color:#2f3a9e}
 .coach .eqline{font-family:var(--serif);font-size:1.25em;margin:6px 0;color:var(--ink)}
-.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.tools .op{min-width:64px;min-height:52px;border:2px solid var(--line2);background:#fff;border-radius:14px;font-size:1.15rem;font-weight:800;color:#3d4a73;padding:6px 14px;box-shadow:0 2px 0 #e3e6f0}
-.tools .op small{display:block;font-size:.68rem;font-weight:700;color:var(--faint);letter-spacing:.02em}
-.tools .op:hover{border-color:#aab2ea;background:#fafbff}
-.tools .op.on{background:var(--accent);border-color:var(--accent);color:#fff}.tools .op.on small{color:#dfe3ff}
-.tools .op.pulse{animation:pulse .8s infinite alternate;border-color:#e0a82e}
-.tools .sp{flex:1 1 0;min-width:4px}
-.tools2{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.btn{border:1px solid var(--line2);background:#fff;border-radius:12px;padding:8px 14px;font-weight:700;color:#3d4a73;min-height:46px}.btn:hover{background:var(--accent-soft)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent-d)}
 .shake{animation:shake .35s}@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
-@media(max-width:640px){.tools .op{min-width:56px;min-height:50px;padding:5px 10px;font-size:1.05rem}.panel{padding:14px}}
+@media(max-width:640px){.panel{padding:14px}}
+
+
+/* ---------- level picker ---------- */
+.pick{margin:4px 0 16px}
+.pick-head{display:flex;align-items:center;gap:12px;margin:0 0 10px;font-size:.78rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}.pick-head:after{content:'';flex:1;border-top:2px dashed var(--line2)}
+.levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:10px}
+.lvcard{display:flex;align-items:flex-start;gap:12px;text-align:left;border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px 14px;min-height:78px;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.lvcard:hover:not(:disabled){border-color:#aab2ea}
+.lvcard .ico{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;flex:none;font:800 1rem/1 var(--serif);color:#3c47b8}
+.lvcard b{display:block;font-size:1rem;letter-spacing:-.01em;line-height:1.2}.lvcard small{display:block;color:var(--muted);font-size:.84rem;line-height:1.3;margin-top:2px}
+.lvcard .cnt{display:inline-block;margin-top:5px;font-size:.72rem;font-weight:750;color:var(--faint)}
+.lvcard.active{border:2px solid var(--accent);padding:11px 13px;background:linear-gradient(135deg,#f3f4ff,#fff);box-shadow:0 0 0 3px #4b57d11f,var(--shadow)}.lvcard.active b{color:var(--accent-d)}
+.lvcard:disabled{opacity:.5;box-shadow:none;background:#fafbfd}
+.pick-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:10px}.pick-row>*{min-width:0}
+.field{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px 12px;box-shadow:var(--shadow)}.field>span{font-weight:750;font-size:.92rem;white-space:nowrap}.field select{flex:1;min-width:0;border:1px solid var(--line2)}
+.plugcard{display:flex;align-items:center;gap:12px;background:var(--mint);border:1px solid var(--mint-line);border-radius:14px;padding:8px 14px;cursor:pointer;min-height:56px}
+.plugcard input{width:24px;height:24px;accent-color:var(--mint-ink);flex:none}.plugcard b{display:block;color:var(--mint-ink);font-size:.98rem}.plugcard small{display:block;color:#3f7d61;font-size:.82rem}
+@media(max-width:640px){.levels{grid-template-columns:1fr 1fr}.lvcard{flex-direction:column;gap:6px;min-height:0}.lvcard small{display:none}.pick-row{grid-template-columns:1fr}}
+
+/* ---------- game card ---------- */
+.game-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.gt-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--line2);background:#fff;border-radius:12px;padding:10px 16px;font-weight:650;color:#34416a;min-height:48px}.btn:hover{background:#f6f7fc}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}.btn.primary:hover{background:var(--accent-d)}
+.btn:disabled{opacity:.45}
+.btn.next{width:100%;margin-top:12px;min-height:54px;font-size:1.05rem}
+.opbox{margin-top:12px;border:1px solid var(--line);border-radius:var(--r-md);background:#fbfbfe;padding:10px 12px 12px}
+.op-label{margin:0 0 8px;font-size:.84rem;color:var(--muted);font-weight:650}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:8px}
+.tools .op{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:62px;border:1px solid var(--line2);background:#fff;border-radius:14px;padding:6px 4px;box-shadow:0 1px 0 #e3e6f0;transition:background .12s,border-color .12s,transform .08s}
+.tools .op span{font:800 1.3rem/1.15 var(--serif);color:var(--accent-d);white-space:nowrap}
+.tools .op small{font-size:.7rem;font-weight:700;color:var(--faint);letter-spacing:.01em}
+.tools .op.sp{background:#f7f5ff;border-color:#ddd5f7}.tools .op.sp span{color:#5a43b8;font-size:1.12rem}
+.tools .op.sw{background:var(--mint);border-color:var(--mint-line)}.tools .op.sw span{color:var(--mint-ink)}
+.tools .op:hover:not(:disabled){border-color:#aab2ea;transform:translateY(-1px)}
+.tools .op.on{background:var(--accent);border-color:var(--accent)}.tools .op.on span,.tools .op.on small{color:#fff}
+.tools .op.pulse{animation:pulse .8s infinite alternate;border-color:#e0a82e}
+.tools .op:disabled{opacity:.45;transform:none}
+.actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}
+@media(max-width:640px){.actions{grid-template-columns:1fr 1fr}.tools{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.tools .op{min-height:56px}.tools .op span{font-size:1.15rem}.gt-right{width:100%;justify-content:space-between}}
 
 /* ---------- plug-in stage ---------- */
+.tools2{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.plug-acts{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}
 .plug{margin-top:14px;border:2px solid #c9cff8;background:linear-gradient(135deg,#f6f7ff,#fff);border-radius:var(--r-lg);padding:16px}
 .plug h3{margin:0 0 6px;font-size:1.1rem}.plug .formula{font-family:var(--serif);font-size:1.3rem;margin:4px 0 10px;display:flex;align-items:center;gap:.3em;flex-wrap:wrap}
 .givens{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}.given{background:#fff;border:1px solid var(--line2);border-radius:10px;padding:6px 10px;font-size:1rem}.given.const{background:#f5f6fa;color:var(--muted)}.given.trap{border-color:var(--amber-line);background:var(--amber)}
-.answer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.answer label{font-family:var(--serif);font-size:1.25rem}
+.answer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.answer label{font-family:var(--serif);font-size:1.25rem}
+.answer input{flex:1;min-width:150px;border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font-size:1.15rem;min-height:54px;background:#fff}.answer input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px #4b57d126}
+.answer .btn.primary{min-height:54px;padding:0 24px;font-size:1.02rem}
 .answer input{width:min(240px,60vw);border:2px solid var(--line2);border-radius:12px;padding:10px 12px;font-size:1.1rem;min-height:50px}.answer input:focus{border-color:var(--accent);outline:none}
 .unit{font-weight:700;color:var(--muted)}
 .note-small{font-size:.86rem;color:var(--muted)}
@@ -140,6 +182,7 @@ details.ti{margin-top:10px;border:1px solid var(--line);border-radius:12px;backg
 .dpad [data-k=up]{grid-column:2;grid-row:1}.dpad [data-k=left]{grid-column:1;grid-row:1/3;height:48px!important}.dpad [data-k=right]{grid-column:3;grid-row:1/3;height:48px!important}.dpad [data-k=down]{grid-column:2;grid-row:2}
 .calc-foot{display:flex;gap:8px;margin-top:10px}.calc-foot .btn{flex:1;min-height:42px;background:#3a3f49;color:#fff;border-color:#4a505c}
 .calc-help{font-size:.72rem;color:#9aa3b5;margin-top:6px;line-height:1.35}
+@media(min-width:1000px){body.calc-open .wrap{padding-right:370px}}
 @media(max-width:640px){.calc-dock{left:0;right:0;bottom:0;width:auto;max-height:66vh;border-radius:20px 20px 0 0}.dock-head{border-radius:20px 20px 0 0}body.calc-open .wrap{padding-bottom:68vh}.calc .keys button{min-height:40px}}
 /* ---------- progress ---------- */
 .section-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}.section-head h2{margin:0 0 10px;font-size:1.15rem}
@@ -198,42 +241,51 @@ dialog{border:0;border-radius:var(--r-lg);padding:0;width:min(760px,94vw);max-he
  </section>
  <ol class="howto"><li><i>1</i>Pick an operation</li><li><i>2</i>Tap a piece</li><li><i>3</i>Get the <span class="var-t">gold</span> letter alone on the left</li></ol>
 
- <section class="panel controls" aria-label="Practice settings">
-  <div class="ctl"><label class="lbl" id="lvlLbl">Level</label><div class="seg" id="levels" role="group" aria-labelledby="lvlLbl"></div></div>
-  <div class="ctl"><label class="lbl" for="chapter">Chapter</label><select id="chapter"></select></div>
-  <label class="switch"><input type="checkbox" id="plugOn" checked> Plug in numbers after solving</label>
+ <section class="pick" aria-label="Practice settings">
+  <p class="pick-head">Pick a level</p>
+  <div class="levels" id="levels" role="group" aria-label="Level"></div>
+  <div class="pick-row">
+   <label class="field"><span>📖 Chapter</span><select id="chapter"></select></label>
+   <label class="plugcard"><input type="checkbox" id="plugOn" checked><span><b>🧮 Plug in numbers</b><small>After you solve it, calculate the answer.</small></span></label>
+  </div>
  </section>
 
  <main class="panel" id="game">
-  <div class="game-head">
-   <div><span class="eq-tag" id="eqTag"></span><p class="goal" id="goal"></p></div>
-   <div class="meter" id="meter"></div>
+  <div class="game-top">
+   <div class="gt-left"><span class="eq-tag" id="eqTag"></span><p class="goal" id="goal"></p></div>
+   <div class="gt-right"><span class="meter" id="meter"></span><button type="button" class="btn" id="skipBtn">New equation →</button></div>
   </div>
   <div class="stage" id="stage" aria-label="Equation"><div class="side" id="L"></div><div class="eqsign" aria-hidden="true">=</div><div class="side" id="R"></div></div>
   <div class="last" id="last" aria-live="polite"></div>
   <div class="coach" id="coach" aria-live="polite"></div>
-  <div class="tools" id="tools" role="group" aria-label="Operations">
-   <button type="button" class="op" data-a="mul" aria-label="Multiply both sides">×<small>multiply</small></button>
-   <button type="button" class="op" data-a="div" aria-label="Divide both sides">÷<small>divide</small></button>
-   <button type="button" class="op" data-a="add" aria-label="Add to both sides">+<small>add</small></button>
-   <button type="button" class="op" data-a="sub" aria-label="Subtract from both sides">−<small>subtract</small></button>
-   <button type="button" class="op" data-u="neg" aria-label="Multiply both sides by negative one">×(−1)<small>flip sign</small></button>
-   <button type="button" class="op fn" data-u="log" aria-label="Take log base 10 of both sides">log<small>log₁₀</small></button>
-   <button type="button" class="op fn" data-u="p10" aria-label="Raise 10 to both sides">10ˣ<small>antilog</small></button>
-   <button type="button" class="op fn" data-u="ln" aria-label="Take natural log of both sides">ln<small>natural log</small></button>
-   <button type="button" class="op fn" data-u="exp" aria-label="Raise e to both sides">eˣ<small>undo ln</small></button>
-   <button type="button" class="op" data-u="rec" aria-label="Flip both sides (take the reciprocal)">1/x<small>flip both</small></button>
-   <button type="button" class="op" id="swapBtn" aria-label="Swap left and right sides">⇄<small>swap sides</small></button>
+  <div class="opbox">
+   <p class="op-label">Do the same thing to <b>both sides</b></p>
+   <div class="tools" id="tools" role="group" aria-label="Operations">
+    <button type="button" class="op ar" data-a="mul" aria-label="Multiply both sides"><span>×</span><small>multiply</small></button>
+    <button type="button" class="op ar" data-a="div" aria-label="Divide both sides"><span>÷</span><small>divide</small></button>
+    <button type="button" class="op ar" data-a="add" aria-label="Add to both sides"><span>+</span><small>add</small></button>
+    <button type="button" class="op ar" data-a="sub" aria-label="Subtract from both sides"><span>−</span><small>subtract</small></button>
+    <button type="button" class="op sp" data-u="neg" aria-label="Multiply both sides by negative one"><span>×(−1)</span><small>flip sign</small></button>
+    <button type="button" class="op sp fn" data-u="log" aria-label="Take log base 10 of both sides"><span>log</span><small>log₁₀</small></button>
+    <button type="button" class="op sp fn" data-u="p10" aria-label="Raise 10 to both sides"><span>10ˣ</span><small>antilog</small></button>
+    <button type="button" class="op sp fn" data-u="ln" aria-label="Take natural log of both sides"><span>ln</span><small>natural log</small></button>
+    <button type="button" class="op sp fn" data-u="exp" aria-label="Raise e to both sides"><span>eˣ</span><small>undo ln</small></button>
+    <button type="button" class="op sp pw" data-u="pw2" aria-label="Square both sides"><span>x²</span><small>square</small></button>
+    <button type="button" class="op sp pw" data-u="rt" aria-label="Square root of both sides"><span>√</span><small>square root</small></button>
+    <button type="button" class="op sp fx" data-u="expand" aria-label="Multiply out the parentheses"><span>a(b+c)</span><small>expand</small></button>
+    <button type="button" class="op sp fx" data-u="factor" aria-label="Factor the gold letter out"><span>x( )</span><small>factor x</small></button>
+    <button type="button" class="op sp" data-u="rec" aria-label="Flip both sides (take the reciprocal)"><span>1/x</span><small>flip</small></button>
+    <button type="button" class="op sw" id="swapBtn" aria-label="Swap left and right sides"><span>⇄</span><small>swap sides</small></button>
+   </div>
   </div>
-  <div class="tools2">
-   <button type="button" class="btn" id="undoBtn">↶ Undo</button>
+  <div class="actions">
    <button type="button" class="btn" id="hintBtn">💡 Hint</button>
+   <button type="button" class="btn" id="showBtn">🧭 Show me how</button>
+   <button type="button" class="btn" id="undoBtn">↶ Undo</button>
    <button type="button" class="btn" id="restartBtn">⟲ Start over</button>
-   <button type="button" class="btn" id="showBtn">👀 Show me how</button>
-   <button type="button" class="btn" id="skipBtn">⏭ New equation</button>
   </div>
-  <section class="plug" id="plug" hidden aria-labelledby="plugTitle"></section>
-  <div class="tools2"><button type="button" class="btn primary" id="nextBtn" hidden>Next equation →</button></div>
+ <section class="plug" id="plug" hidden aria-labelledby="plugTitle"></section>
+  <button type="button" class="btn primary next" id="nextBtn" hidden>Next equation →</button>
   <p class="note-small" style="margin:14px 0 0">Scientific notation: type <b>3.45E-4</b> or <b>3.45*10^-4</b>. Constants and conversions are on the 📘 Equation Sheet.</p>
  </main>
 
@@ -268,7 +320,7 @@ dialog{border:0;border-radius:var(--r-lg);padding:0;width:min(760px,94vw);max-he
    Adapted from Dr. U's "Equation Rearranger" (FCC-Chem/tools, chemdru/algebratrainer).
    Expr = array of terms {s:±1, n:[factors], d:[factors]}.
    Factor kinds: v (variable), n (number), sum (parenthesized expr), log, p10 (10^x), ln, exp (e^x). */
-const INV={log:'p10',p10:'log',ln:'exp',exp:'ln'};
+const INV={log:'p10',p10:'log',ln:'exp',exp:'ln',pw2:'rt',rt:'pw2'};
 const K={f:f=>f.k==='v'?'v'+f.name:f.k==='n'?'n'+f.v:f.k+'('+K.e(f.e)+')',
  t:t=>t.s+'|'+t.n.map(K.f).sort().join('*')+'/'+t.d.map(K.f).sort().join('*'),
  e:e=>e.map(K.t).sort().join('+')};
@@ -296,11 +348,16 @@ function parse(str){const T=str.match(/\d+\.?\d*|\[[^\]]+\](?:_[A-Za-z0-9]+)?|[A
  function sum(){let s=1;if(pk()==='-'){nx();s=-1}else if(pk()==='+')nx();const e=[term(s)];while(pk()==='+'||pk()==='-')e.push(term(nx()==='-'?-1:1));return e}
  function term(s){const n=[],d=[];let inv=false;for(;;){(inv?d:n).push(fac());const o=pk();if(o==='*'||o==='/'){nx();inv=o==='/'}else break}return{s,n,d}}
  function fac(){const t=nx();if(t==='('){const e=sum();nx();return{k:'sum',e}}
-  if((t==='log'||t==='ln')&&pk()==='('){nx();const e=sum();nx();return{k:t,e}}
+  const FN={log:'log',ln:'ln',sq:'pw2',sqrt:'rt'};if(FN[t]&&pk()==='('){nx();const e=sum();nx();return{k:FN[t],e}}
   return /^[\d.]/.test(t)?{k:'n',v:+t,t}:{k:'v',name:t}}
  return norm(sum())}
-let REC_OK=false; /* allow the solver to use 1/x (flip both sides) only where an equation needs it */
-function doOp(st,m){const f=e=>m.t==='rec'?norm(invE(e)):m.t==='neg'?negE(e):INV[m.t]?fnE(m.t,e):m.t==='mul'?(m.inv?mulE(e,invE(m.x)):mulE(e,m.x,true)):addE(e,m.inv?negE(m.x):m.x);return{L:f(st.L),R:f(st.R)}}
+let SOLVE_OPS=[]; /* extra whole-equation moves the solver may use for the current equation: rec, expand, factor */
+function expandE(e){let out=e,changed=true;while(changed){changed=false;const nx=[];for(const t of out){const k=t.n.findIndex(f=>f.k==='sum');
+  if(k<0){nx.push(t);continue}changed=true;const rest=t.n.filter((f,i)=>i!==k);for(const u of t.n[k].e)nx.push({s:t.s*u.s,n:[...rest,...u.n],d:[...t.d,...u.d]})}out=nx}return norm(out)}
+function factorE(e,g){const isG=f=>f.k==='v'&&f.name===g,hit=[],other=[];
+ for(const t of e){const c=t.n.filter(isG).length,rest={s:t.s,n:t.n.filter(f=>!isG(f)),d:t.d};if(c===1&&!has([rest],g))hit.push(rest);else other.push(t)}
+ if(hit.length<2)return e;return[{s:1,n:[{k:'v',name:g},{k:'sum',e:norm(hit)}],d:[]},...other]}
+function doOp(st,m){const f=e=>m.t==='rec'?norm(invE(e)):m.t==='expand'?expandE(e):m.t==='factor'?factorE(e,m.g):m.t==='neg'?negE(e):INV[m.t]?fnE(m.t,e):m.t==='mul'?(m.inv?mulE(e,invE(m.x)):mulE(e,m.x,true)):addE(e,m.inv?negE(m.x):m.x);return{L:f(st.L),R:f(st.R)}}
 const isT=(e,g)=>e.length===1&&e[0].s===1&&e[0].n.length===1&&!e[0].d.length&&e[0].n[0].k==='v'&&e[0].n[0].name===g;
 const has=(e,g)=>JSON.stringify(e).includes('"name":"'+g+'"');
 const isoAny=(st,g)=>(isT(st.L,g)&&!has(st.R,g))||(isT(st.R,g)&&!has(st.L,g));
@@ -308,7 +365,7 @@ const solved=(st,g)=>isT(st.L,g)&&!has(st.R,g);
 function vars(e,s=new Set()){e.forEach(t=>[...t.n,...t.d].forEach(f=>f.k==='v'?s.add(f.name):f.k!=='n'&&vars(f.e,s)));return s}
 /* numeric evaluation */
 function evalF(f,V){if(f.k==='v')return V[f.name];if(f.k==='n')return f.v;const x=evalE(f.e,V);
- return f.k==='sum'?x:f.k==='log'?Math.log10(x):f.k==='p10'?Math.pow(10,x):f.k==='ln'?Math.log(x):Math.exp(x)}
+ return f.k==='sum'?x:f.k==='pw2'?x*x:f.k==='rt'?Math.sqrt(x):f.k==='log'?Math.log10(x):f.k==='p10'?Math.pow(10,x):f.k==='ln'?Math.log(x):Math.exp(x)}
 function evalE(e,V){let s=0;for(const t of e){let p=t.s;t.n.forEach(f=>p*=evalF(f,V));t.d.forEach(f=>p/=evalF(f,V));s+=p}return s}
 /* pieces: each tappable piece -> {opr: expr used by an operation, mv: the move the solver/hints would make with it} */
 let REG=[],TG='';
@@ -325,7 +382,7 @@ function solve(st,g,max=9){if(isoAny(st,g))return{st,p:[],i:-1};const seen=new S
  for(let d=0;d<max&&q.length&&seen.size<20000;d++){const nq=[];
   for(const x of q){const B=build(x.st),ord=B.map((pc,i)=>i).sort((a,b)=>(has(B[b].opr,g)?1:0)-(has(B[a].opr,g)?1:0));for(const idx of ord){const pc=B[idx];if(!pc.mv)continue;const ns=doOp(x.st,pc.mv),k=key(ns);if(seen.has(k))continue;seen.add(k);
    const r={st:ns,p:[...x.p,pc.mv],i:x.i<0?idx:x.i};if(isoAny(ns,g))return r;nq.push(r)}
-   if(REC_OK){const mv={t:'rec'},ns=doOp(x.st,mv),k=key(ns);if(!seen.has(k)){seen.add(k);const r={st:ns,p:[...x.p,mv],i:x.i<0?-2:x.i};if(isoAny(ns,g))return r;nq.push(r)}}}q=nq}return null}
+   for(const op of SOLVE_OPS){const mv=op==='factor'?{t:'factor',g}:{t:op},ns=doOp(x.st,mv),k=key(ns);if(!seen.has(k)){seen.add(k);const r={st:ns,p:[...x.p,mv],i:x.i<0?-2:x.i};if(isoAny(ns,g))return r;nq.push(r)}}}q=nq}return null}
 const trySolve=solve;
 
 /* ===================== Equation bank =====================
@@ -382,6 +439,23 @@ const EQ=[
  {id:'qrxn',name:'Heat of reaction (calorimetry)',f:'q_rxn = -m*c*ΔT',ch:{'1A':5},lvl:'mx',sf:1,dep:'q_rxn',v:{q_rxn:['J',-1e6,1e6,3],m:['g',20,500,3],c:['J/(g·°C)',[4.184,4.18]],ΔT:['°C',1,30,3]},neg:['q_rxn'],vid:['1xjSCl5hsug',934]},
  {id:'zero',name:'Zero-order integrated rate law',f:'[A] = -k*t + [A]_0',ch:{'1B':12},lvl:'mx',dep:'[A]',v:{'[A]':['M',.01,2,3],k:['M/s',1e-4,.01,3],t:['s',10,500,3],'[A]_0':['M',.5,2,3]},ok:v=>v['[A]']>.05*v['[A]_0']},
  {id:'second',name:'Second-order integrated rate law',f:'1/[A] = k*t + 1/[A]_0',ch:{'1B':12},lvl:'mx',rec:1,dep:'[A]',v:{'[A]':['M',.01,2,3],k:['M⁻¹·s⁻¹',1e-3,1,3],t:['s',10,1000,3],'[A]_0':['M',.1,2,3]},ok:v=>v['[A]']>.05*v['[A]_0']&&v['[A]']<.85*v['[A]_0']},
+ // ---------- squares and square roots (level 'pw') ----------
+ {id:'ke',name:'Kinetic energy',f:'KE = 0.5*m*sq(v)',ch:{'1A':5},lvl:'pw',sf:1,dep:'KE',v:{KE:['J',.01,1e7,3],m:['kg',.01,2000,3],v:['m/s',1,500,3]}},
+ {id:'urms',name:'Root-mean-square speed',f:'u_rms = sqrt(3*R*T/MM)',ch:{'1A':9},lvl:'pw',sf:1,c:{R:[8.314,'J/(mol·K)']},dep:'u_rms',v:{u_rms:['m/s',50,3000,3],T:['K',200,800,3],MM:['kg/mol',.002,.25,3]},alt:{T:'C',MM:'gmol'}},
+ {id:'graham',name:'Graham’s law of effusion',f:'r_1/r_2 = sqrt(MM_2/MM_1)',ch:{'1A':9},lvl:'pw',sf:1,dep:'r_1',v:{r_1:['mL/min',.5,500,3],r_2:['mL/min',1,50,3],MM_1:['g/mol',2,250,4],MM_2:['g/mol',2,250,4]},ok:v=>Math.abs(v.MM_1-v.MM_2)>3},
+ {id:'rydberg',name:'Rydberg equation',f:'1/λ = R_H*(1/sq(n_f) - 1/sq(n_i))',t:['λ','n_i','n_f'],ch:{'1A':6},lvl:'pw',ops:['rec'],c:{R_H:[1.097e7,'m⁻¹']},dep:'λ',
+  gen:()=>{const nf=[1,2,3][Math.random()*3|0];return{n_f:nf,n_i:nf+1+(Math.random()*4|0)}},v:{λ:['m',5e-8,1e-5,4],n_f:['',[1,2,3]],n_i:['',[2,3,4,5,6,7]]},alt:{λ:'nm'}},
+ {id:'weakacid',name:'Weak acid [H₃O⁺] (x is small)',f:'[H3O+] = sqrt(K_a*C_a)',ch:{'1B':14},lvl:'pw',sf:1,dep:'[H3O+]',v:{'[H3O+]':['M',1e-7,.05,2],K_a:['',1e-10,1e-3,2],C_a:['M',.01,1,3]},ok:v=>v['[H3O+]']<.05*v.C_a},
+ {id:'ksp',name:'Solubility product (1:1 salt)',f:'K_sp = sq(s)',ch:{'1B':15},lvl:'pw',sf:1,dep:'K_sp',v:{K_sp:['',1e-18,1e-3,2],s:['M',1e-9,.03,2]}},
+ // ---------- x and (1 − x) (mixed) ----------
+ {id:'isotopex',name:'Isotope abundance (x and 1 − x)',f:'M_avg = x*m_1 + (1 - x)*m_2',t:['x','m_1','m_2'],ch:{'1A':2},lvl:'mx',ops:['expand','factor'],dep:'M_avg',
+  gen:()=>{const m1=R(10,120);return{m_1:m1,m_2:m1+[1,2][Math.random()*2|0]+R(-.01,.01),x:R(.05,.95)}},v:{M_avg:['amu',1,200,'dp3'],x:['',0,1,'dp3'],m_1:['amu',1,200,'dp3'],m_2:['amu',1,200,'dp3']}},
+ {id:'raoultx',name:'Raoult’s law, two liquids (x and 1 − x)',f:'P_total = x*P_A + (1 - x)*P_B',t:['x','P_A','P_B'],ch:{'1A':11},lvl:'mx',ops:['expand','factor'],dep:'P_total',
+  v:{P_total:['torr',1,1000,'dp1'],x:['',.05,.95,'dp3'],P_A:['torr',20,600,'dp1'],P_B:['torr',20,600,'dp1']},ok:v=>Math.abs(v.P_A-v.P_B)>40},
+ {id:'vdw',name:'van der Waals (non-ideal gas)',f:'(P + a*sq(n)/sq(V))*(V - n*b) = n*R*T',t:['P','T'],ch:{'1A':9},lvl:'mx',sf:1,c:{R:[0.08206,'L·atm/(mol·K)']},dep:'P',
+  v:{P:['atm',.1,100,3],a:['L²·atm/mol²',.034,6.7,3],n:['mol',.5,3,3],V:['L',1,25,3],b:['L/mol',.0171,.0562,3],T:['K',250,600,3]},alt:{T:'C'},ok:v=>v.n*v.b<.2*v.V},
+ {id:'metalwater',name:'Hot metal in water (q metal = −q water)',f:'-m_m*c_m*(T_f - T_m) = m_w*c_w*(T_f - T_w)',t:['c_m','m_m','T_m','m_w','T_f'],ch:{'1A':5},lvl:'mx',ops:['expand','factor'],c:{c_w:[4.184,'J/(g·°C)']},dep:'T_f',
+  v:{m_m:['g',10,200,3],c_m:['J/(g·°C)',.129,.9,3],T_m:['°C',75,100,'dp1'],m_w:['g',40,200,3],T_w:['°C',15,25,'dp1'],T_f:['°C',15,100,'dp1']},ok:v=>v.T_f-v.T_w>=2&&v.T_m-v.T_f>=10,vid:['1xjSCl5hsug',934]},
  // ---------- logs ----------
  {id:'ph',name:'pH',f:'pH = -log([H3O+])',ch:{'3A':12,'1B':14},lvl:'lg',dep:'pH',v:{pH:['',1,13,'dp2'],'[H3O+]':['M',1e-13,.1,3]},vid:['AAOXGkcrUMg',0]},
  {id:'poh',name:'pOH',f:'pOH = -log([OH-])',ch:{'3A':12,'1B':14},lvl:'lg',dep:'pOH',v:{pOH:['',1,13,'dp2'],'[OH-]':['M',1e-13,.1,3]},vid:['AAOXGkcrUMg',0]},
@@ -395,6 +469,7 @@ const EQ=[
 ];
 const R=(a,b)=>a+Math.random()*(b-a);
 
+const opsOf=q=>[...(q.ops||[]),...(q.rec?['rec']:[])];
 /* ===================== Numbers: generate, format, parse, sig figs ===================== */
 const SUP={'-':'⁻','0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};
 function prec(p){return typeof p==='string'?{dp:+p.slice(2)}:Array.isArray(p)?{list:p}:{sf:p}}
@@ -419,7 +494,7 @@ function readNum(raw){let s=String(raw||'').trim().replace(/[\s,]/g,'').replace(
 function rnd(spec){const[,lo,hi,p]=spec;if(Array.isArray(lo))return lo[Math.random()*lo.length|0];
  if(lo>0&&hi/lo>50)return Math.exp(Math.log(lo)+Math.random()*(Math.log(hi)-Math.log(lo)));return lo+Math.random()*(hi-lo)}
 const specOf=(q,v)=>{const s=q.v[v];return Array.isArray(s[1])?{u:s[0],list:s[1],p:s[1]}:{u:s[0],lo:s[1],hi:s[2],p:s[3]}};
-const ISO={};function isoExpr(q,g){const k=q.id+'|'+g;if(ISO[k])return ISO[k];const[a,b]=q.f.split('=').map(parse);const ro=REC_OK;REC_OK=!!q.rec;const s=trySolve({L:a,R:b},g);REC_OK=ro;if(!s)return null;
+const ISO={};function isoExpr(q,g){const k=q.id+'|'+g;if(ISO[k])return ISO[k];const[a,b]=q.f.split('=').map(parse);const ro=SOLVE_OPS;SOLVE_OPS=opsOf(q);const s=trySolve({L:a,R:b},g);SOLVE_OPS=ro;if(!s)return null;
  const e=isT(s.st.L,g)?s.st.R:s.st.L;return ISO[k]=e}
 /* make a consistent set of values for every variable of q (rounded to display precision) */
 function makeValues(q){const C={};for(const k in q.c||{})C[k]=q.c[k][0];
@@ -625,13 +700,14 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const CH={'3A':{1:'Basics of Measurement',2:'Atomic Structure',3:'Light, Electrons, and the Periodic Table',5:'The Mole and Chemical Formulas',7:'Solids, Liquids, and Phase Changes',8:'Gases',9:'Aqueous Solutions',11:'Stoichiometry',12:'Acids and Bases'},
  '1A':{1:'Essential Ideas',2:'Atoms, Molecules, and Ions',3:'Composition of Substances and Solutions',4:'Stoichiometry of Chemical Reactions',5:'Thermochemistry',6:'Electronic Structure and Periodic Properties',9:'Gases',11:'Solutions and Colloids'},
- '1B':{12:'Kinetics',14:'Acid-Base Equilibria',16:'Thermodynamics',17:'Electrochemistry',21:'Nuclear Chemistry'}};
+ '1B':{12:'Kinetics',14:'Acid-Base Equilibria',15:'Equilibria of Other Reaction Classes',16:'Thermodynamics',17:'Electrochemistry',21:'Nuclear Chemistry'}};
 const BOOK={'3A':['LibreTexts: Introductory Chemistry, Atoms First for FCC','https://chem.libretexts.org/Courses/Fresno_City_College/Introductory_Chemistry_Atoms_First_for_FCC'],
  '1A':['OpenStax Chemistry 2e','https://openstax.org/details/books/chemistry-2e'],'1B':['OpenStax Chemistry 2e','https://openstax.org/details/books/chemistry-2e']};
-const LEVELS=[['md','1','× ÷'],['as','2','+ −'],['mx','3','Mixed'],['lg','4','Logs']];
-const DN={t_half:'t<sub>½</sub>',E_0:'E°',ΔG_0:'ΔG°',PY:'% yield',m_act:'actual yield',m_theo:'theoretical yield',C_cal:'C<sub>cal</sub>'};
-const CONST_TXT={'0.08206':'0.08206','8.314':'8.314','299800000':'2.998 × 10⁸','6.626e-34':'6.626 × 10⁻³⁴','96485':'96,485','1e-14':'1.0 × 10⁻¹⁴'};
-const CONST_KEY={'0.08206':'0.08206','8.314':'8.314','299800000':'2.998E8','6.626e-34':'6.626E-34','96485':'96485','1e-14':'1.0E-14'};
+const LVINFO={md:['×÷','Multiply & divide','Undo × and ÷ to get the letter alone.','#eef0fe'],as:['+−','Add & subtract','Undo + and − first.','#e8f6ef'],mx:['⚗','Mixed','Both kinds, plus x and (1 − x).','#fff6e2'],pw:['x²','Squares & roots','Use x² and √ on both sides.','#fdedf0'],lg:['log','Logs','log, ln, 10ˣ, and eˣ.','#f3effd']};
+const LEVELS=[['md','1','× ÷'],['as','2','+ −'],['mx','3','Mixed'],['pw','4','x² √'],['lg','5','Logs']];
+const DN={m_m:'m<sub>metal</sub>',c_m:'c<sub>metal</sub>',T_m:'T<sub>metal</sub>',m_w:'m<sub>water</sub>',c_w:'c<sub>water</sub>',T_w:'T<sub>water</sub>',t_half:'t<sub>½</sub>',E_0:'E°',ΔG_0:'ΔG°',PY:'% yield',m_act:'actual yield',m_theo:'theoretical yield',C_cal:'C<sub>cal</sub>'};
+const CONST_TXT={'0.08206':'0.08206','8.314':'8.314','299800000':'2.998 × 10⁸','6.626e-34':'6.626 × 10⁻³⁴','96485':'96,485','1e-14':'1.0 × 10⁻¹⁴','4.184':'4.184','10970000':'1.097 × 10⁷'};
+const CONST_KEY={'0.08206':'0.08206','8.314':'8.314','299800000':'2.998E8','6.626e-34':'6.626E-34','96485':'96485','1e-14':'1.0E-14','10970000':'1.097E7'};
 const VT={USaNyE1y6gE:'What Is Density? (density is a formula)',Uk5EulrSWeI:'Mole conversions: mass to moles',qwkB_gLdg6s:'Solution Dilutions with M₁V₁ = M₂V₂',uexlvfNkuhs:'Gas Laws Part 1: Boyle, Charles, Gay-Lussac',_8sGFdLBhRk:'Gas Laws Part 2: Combined Gas Law and Avogadro',
  T0fOuTmNY6g:'Introduction to the Ideal Gas Law',efgNeWjlsGY:'Tips and Tricks on Solving Gas Laws',r7isVoOlWyU:'Specific Heat Capacity: q = mcΔT',AgKAXoYLRBA:'Electromagnetic Radiation: c = λν and E = hν',gpjC3C_zkoE:'Dalton’s Law of Partial Pressure',
  AAOXGkcrUMg:'Logarithms and Antilogs (for pH)','-UrwKIGAj08':'Introduction to Buffers (Henderson–Hasselbalch)','1xjSCl5hsug':'Introduction to Calorimetry'};
@@ -641,11 +717,18 @@ const GENERAL_VIDS=[['6GcGBVTu3c8',1997,'Kahoot review: rearranging gas laws ste
 function disp(n){if(DN[n])return DN[n];let m;
  if(n[0]==='['){m=n.match(/^\[(.+?)\](?:_(.+))?$/);return'['+m[1].replace(/(\d+)/g,'<sub>$1</sub>').replace(/([+-])$/,(x,c)=>'<sup>'+(c==='-'?'−':'+')+'</sup>')+']'+(m[2]?'<sub>'+m[2]+'</sub>':'')}
  m=n.match(/^(.+?)(?:_(.+))?$/);return m[1]+(m[2]?'<sub>'+m[2]+'</sub>':'')}
-const plain=h=>String(h).replace(/<sup>(.*?)<\/sup>/g,'^$1').replace(/<[^>]+>/g,'').replace(/&thinsp;/g,'');
+const plain=h=>String(h).replace(/<span class="pr">/g,'(').replace(/<svg class="rs"[\s\S]*?<\/svg>/g,'√').replace(/<sup>(.*?)<\/sup>/g,'^$1').replace(/<[^>]+>/g,'').replace(/&thinsp;/g,'');
+/* stretchy parentheses and radical (SVG that grows with the content's height) */
+const SVGP=(d,cls)=>'<svg class="'+cls+'" viewBox="0 0 10 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+d+'" vector-effect="non-scaling-stroke"/></svg>';
+const PL=SVGP('M8 2 C1 25 1 75 8 98','pl'),PR=SVGP('M2 2 C9 25 9 75 2 98','pl');
+const par=h=>'<span class="pr">'+PL+'<span class="pi">'+h+'</span>'+PR+'</span>';
+const RAD='<svg class="rs" viewBox="0 0 24 100" preserveAspectRatio="none" aria-hidden="true"><path d="M1 62 L6 56 L12 97 L23 1.2" vector-effect="non-scaling-stroke"/></svg>';
 let SUBS=null;
 function rF(f){if(f.k==='v'){if(SUBS&&SUBS[f.name]!=null)return'<span class="num">'+SUBS[f.name]+'</span>';return'<span class="'+(f.name===TG?'var-t':'v')+'">'+disp(f.name)+'</span>'}
- if(f.k==='n')return'<span class="num">'+f.t+'</span>';if(f.k==='sum')return'('+rE(f.e)+')';
- if(f.k==='log')return'log('+rE(f.e)+')';if(f.k==='ln')return'ln('+rE(f.e)+')';if(f.k==='p10')return'10<sup>'+rE(f.e)+'</sup>';return'e<sup>'+rE(f.e)+'</sup>'}
+ if(f.k==='n')return'<span class="num">'+f.t+'</span>';if(f.k==='sum')return par(rE(f.e));
+ if(f.k==='pw2'){const e=f.e,s=e.length===1&&e[0].s>0&&e[0].n.length===1&&!e[0].d.length&&(e[0].n[0].k==='v'||e[0].n[0].k==='n');return'<span class="pw">'+(s?rF(e[0].n[0]):par(rE(e)))+'<sup>2</sup></span>'}
+ if(f.k==='rt')return'<span class="rt">'+RAD+'<span class="rti">'+rE(f.e)+'</span></span>';
+ if(f.k==='log')return'log'+par(rE(f.e));if(f.k==='ln')return'ln'+par(rE(f.e));if(f.k==='p10')return'<span class="pw">10<sup>'+rE(f.e)+'</sup></span>';return'<span class="pw">e<sup>'+rE(f.e)+'</sup></span>'}
 const fr=(a,b)=>'<span class="fr"><span>'+a+'</span><b></b><span>'+b+'</span></span>';
 const rT0=t=>{const a=t.n.length?t.n.map(rF).join('&thinsp;'):'1';return t.d.length?fr(a,t.d.map(rF).join('&thinsp;')):a};
 const rE=e=>e.length?e.map((t,i)=>(t.s<0?(i?' − ':'−'):(i?' + ':''))+rT0(t)).join(''):'0';
@@ -664,9 +747,13 @@ function rTop(e){if(!e.length)return'<span class="num">0</span>';
  return h+(t.d.length?fr(a,t.d.map(f=>cf(f,true)).join('')):a)}
 const xTxt=m=>m.x?rE(m.x.length>1?[one(m.x)]:m.x):'';
 function desc(m){const x=xTxt(m);
- return m.t==='rec'?'Flipped both sides (took 1/x of each side)':m.t==='neg'?'Multiplied both sides by −1':m.t==='log'?'Took log₁₀ of both sides':m.t==='p10'?'Raised 10 to the power of both sides':m.t==='ln'?'Took ln of both sides':m.t==='exp'?'Raised e to the power of both sides':
+ return m.t==='rec'?'Flipped both sides (took 1/x of each side)':m.t==='pw2'?'Squared both sides':m.t==='rt'?'Took the square root of both sides':m.t==='expand'?'Multiplied out (expanded) the parentheses':m.t==='factor'?'Factored '+disp(m.g)+' out of its terms':m.t==='neg'?'Multiplied both sides by −1':m.t==='log'?'Took log₁₀ of both sides':m.t==='p10'?'Raised 10 to the power of both sides':m.t==='ln'?'Took ln of both sides':m.t==='exp'?'Raised e to the power of both sides':
  m.t==='mul'?(m.inv?'Divided':'Multiplied')+' both sides by '+x:(m.inv?'Subtracted '+x+' from':'Added '+x+' to')+' both sides'}
 function explain(m){const x='<b>'+xTxt(m)+'</b>',g='<span class="var-t">'+disp(TG)+'</span>';
+ if(m.t==='rt')return g+' is squared. Undo the square by taking the square root (√) of both sides.';
+ if(m.t==='pw2')return'A square root is in the way. Undo it by squaring both sides (x²).';
+ if(m.t==='expand')return g+' is stuck inside parentheses. Multiply them out (expand) so every '+g+' is in its own term.';
+ if(m.t==='factor')return g+' is in more than one term on the same side. Factor it out: '+g+'( … ).';
  if(m.t==='rec')return g+' is on the bottom of a fraction. Flip both sides (1/x) to bring it to the top. On a TI-36X Pro, 1/x is <kbd class="k2">2nd</kbd> <kbd>x⁻¹</kbd>.';
  if(m.t==='neg')return'There is a minus sign in front. Multiply both sides by −1 to flip it.';
  if(m.t==='p10')return g+' is stuck inside a log. Undo log₁₀ by raising 10 to both sides (10ˣ).';
@@ -734,7 +821,7 @@ function pick(){const combos=[];for(const q of pool()){let[a,b]=q.f.split('=').m
  const[q,g]=c[Math.random()*c.length|0];recent.push(q.id+g);if(recent.length>Math.min(6,combos.length-1))recent.shift();
  let[a,b]=q.f.split('=').map(parse);if(Math.random()<.5)[a,b]=[b,a];return{q,tg:g,st0:{L:a,R:b}}}
 function newProblem(){walk=null;const p=pick();if(!p){cur={};$('goal').textContent='No equations here yet. Try another level or chapter.';$('L').innerHTML=$('R').innerHTML='';return}
- cur={...p,moves:0,hinted:false,shown:false,hintStep:0,phase:'solve'};TG=cur.tg;st=cur.st0;hist=[];armed=null;sel=null;REC_OK=!!cur.q.rec;
+ cur={...p,moves:0,hinted:false,shown:false,hintStep:0,phase:'solve'};TG=cur.tg;st=cur.st0;hist=[];armed=null;sel=null;SOLVE_OPS=opsOf(cur.q);
  const s=trySolve(st,TG);cur.par=s?s.p.length+(isT(s.st.R,TG)?1:0):4;cur.dist=s?s.p.length:9;
  $('plug').hidden=true;$('plug').innerHTML='';$('nextBtn').hidden=true;$('stage').classList.remove('win');
  setCoach('', 'Start by asking: what is attached to <span class="var-t">'+disp(TG)+'</span>, and how do I undo it?'+flipTip());
@@ -747,6 +834,8 @@ function draw(hi){REG=[];const L=rTop(st.L),R=rTop(st.R);PCS=REG.slice();$('L').
  document.querySelectorAll('[data-a]').forEach(b=>{b.classList.toggle('on',b.dataset.a===armed);b.classList.remove('pulse')});
  document.querySelectorAll('[data-u]').forEach(b=>b.classList.remove('pulse'));
  const hasFn=q.lvl==='lg'||/log|ln/.test(q.f);document.querySelectorAll('.op.fn').forEach(b=>b.hidden=!hasFn);
+ const hasPw=q.lvl==='pw'||/sq\(|sqrt\(/.test(q.f);document.querySelectorAll('.op.pw').forEach(b=>b.hidden=!hasPw);
+ const hasX=(q.ops||[]).includes('factor');document.querySelectorAll('.op.fx').forEach(b=>b.hidden=!hasX);
  $('stage').classList.toggle('armed',!!armed);
  if(sel!=null){const el=document.querySelector('[data-p="'+sel+'"]');el&&el.classList.add('sel')}
  const onRight=cur.phase==='solve'&&isoAny(st,TG)&&!solved(st,TG);$('swapBtn').classList.toggle('pulse',onRight);
@@ -802,19 +891,23 @@ function kNum(p){p=String(p).replace(/−/g,'-');let neg=p[0]==='-';if(neg)p=p.s
  let h=(neg?kb('(−)')+' ':'')+'<span class="n">'+m+'</span>';if(ex!=null){const x=+ex;h+=' '+kb('EE')+' '+(x<0?kb('(−)')+' ':'')+'<span class="n">'+Math.abs(x)+'</span>'}return h}
 let KV={};
 function kF(f){if(f.k==='v')return kNum(KV[f.name]);if(f.k==='n')return'<span class="n">'+f.t+'</span>';
+ if(f.k==='pw2'){const e=f.e,s=e.length===1&&e[0].n.length===1&&!e[0].d.length&&e[0].s>0;return(s?kF(e[0].n[0]):kb('(')+' '+kE(e)+' '+kb(')'))+' '+kb('x²')}
+ if(f.k==='rt')return kb('2nd','k2')+' '+kb('√')+' '+kE(f.e)+' '+kb(')');
  if(f.k==='sum')return kb('(')+' '+kE(f.e)+' '+kb(')');if(f.k==='log'||f.k==='ln')return kb(f.k)+' '+kE(f.e)+' '+kb(')');
  return kb(f.k==='p10'?'10ˣ':'eˣ')+' '+kE(f.e)+' '+kb('▶')}
 function kT(t){const num=t.n.length?t.n.map(kF).join(' '+kb('×')+' '):'<span class="n">1</span>';if(!t.d.length)return num;
- const den=t.d.map(kF).join(' '+kb('×')+' '),wrap=t.d.length>1||t.d[0].k==='sum';return num+' '+kb('÷')+' '+(wrap?kb('(')+' '+den+' '+kb(')'):den)}
+ const den=t.d.map(kF).join(' '+kb('×')+' '),wrap=t.d.length>1;return num+' '+kb('÷')+' '+(wrap?kb('(')+' '+den+' '+kb(')'):den)}
 function kE(e){return e.map((t,i)=>(t.s<0?(i?kb('−')+' ':kb('(−)')+' '):(i?kb('+')+' ':''))+kT(t)).join(' ')}
 /* key ids for the practice calculator (same order as the keystroke text) */
 function sNum(p){p=String(p).replace(/−/g,'-');const out=[];if(p[0]==='-'){out.push('neg');p=p.slice(1)}const[m,ex]=p.split('E');
  for(const ch of m)out.push(ch==='.'?'dot':ch);if(ex!=null){out.push('ee');let x=ex;if(x[0]==='-'){out.push('neg');x=x.slice(1)}for(const ch of x.replace('+',''))out.push(ch)}return out}
-function sF(f){if(f.k==='v')return sNum(KV[f.name]);if(f.k==='n')return sNum(f.t);if(f.k==='sum')return['lp',...sE(f.e),'rp'];
+function sF(f){if(f.k==='v')return sNum(KV[f.name]);if(f.k==='n')return sNum(f.t);
+ if(f.k==='pw2'){const e=f.e,s=e.length===1&&e[0].n.length===1&&!e[0].d.length&&e[0].s>0;return[...(s?sF(e[0].n[0]):['lp',...sE(e),'rp']),'sq']}
+ if(f.k==='rt')return['second','sq',...sE(f.e),'rp'];if(f.k==='sum')return['lp',...sE(f.e),'rp'];
  if(f.k==='log')return['lnlog','lnlog',...sE(f.e),'rp'];if(f.k==='ln')return['lnlog',...sE(f.e),'rp'];
  if(f.k==='p10')return['expk','expk',...sE(f.e),'right'];return['expk',...sE(f.e),'right']}
 function sT(t){const num=t.n.length?t.n.map(sF).reduce((a,b)=>[...a,'mul',...b]):['1'];if(!t.d.length)return num;
- const den=t.d.map(sF).reduce((a,b)=>[...a,'mul',...b]),wrap=t.d.length>1||t.d[0].k==='sum';return[...num,'div',...(wrap?['lp',...den,'rp']:den)]}
+ const den=t.d.map(sF).reduce((a,b)=>[...a,'mul',...b]),wrap=t.d.length>1;return[...num,'div',...(wrap?['lp',...den,'rp']:den)]}
 function sE(e){let out=[];e.forEach((t,i)=>{if(t.s<0)out.push(i?'sub':'neg');else if(i)out.push('add');out=out.concat(sT(t))});return out}
 function tiSeq(expr,vals){KV=vals;return[...sE(expr),'enter']}
 function tiKeys(expr,vals){KV=vals;let h='<div class="keys">'+kE(expr)+' '+kb('enter')+'</div>';
@@ -826,11 +919,13 @@ function tiKeys(expr,vals){KV=vals;let h='<div class="keys">'+kE(expr)+' '+kb('e
  if(/"k":"sum"/.test(flat))tips.push('Keep the '+kb('(')+' '+kb(')')+' around the + or − part so it is done first.');
  if(/"k":"(log|ln)"/.test(flat))tips.push('The log/ln key is multi-tap: press it again until the screen shows the one you want, then close with '+kb(')')+'.');
  if(/"k":"(p10|exp)"/.test(flat))tips.push('The eˣ/10ˣ key is multi-tap: once for eˣ, twice for 10ˣ. Press '+kb('▶')+' to leave the exponent.');
+ if(/"k":"rt"/.test(flat))tips.push('Square root: '+kb('2nd','k2')+' '+kb('√')+' (above '+kb('x²')+'), type everything under the root, then close with '+kb(')')+'.');
+ if(/"k":"pw2"/.test(flat))tips.push('Square: put a whole expression in '+kb('(')+' '+kb(')')+' before pressing '+kb('x²')+'.');
  if(Object.values(vals).some(v=>String(v).startsWith('-')))tips.push('For a negative number use '+kb('(−)')+', not the minus key.');
  return h+tips.map(s=>'<div class="ti-tip">'+s+'</div>').join('')}
 
 /* ---------- solved ---------- */
-function onSolved(){cur.phase='solved';$('stage').classList.add('win');draw();
+function onSolved(){cur.phase='solved';armed=null;sel=null;$('stage').classList.add('win');draw();
  const q=cur.q;let xp=0;
  if(!cur.shown){xp=10+(cur.moves<=cur.par?5:0)+(cur.hinted?0:5);P_.solved++;if(cur.moves<=cur.par)P_.par++;if(!cur.hinted)P_.solo++;P_.eqs[q.id]=1;if(q.lvl==='lg')P_.logs++}
  ddLog('Rearrange',!cur.shown&&!cur.hinted);
@@ -853,10 +948,11 @@ function buildPlug(){const q=cur.q,V=makeValues(q);if(!V)return false;
   if(!alt){dTxt=tx.html;work=val;workTxt=tx.html;workPlain=tx.plain;sfw=sp.list?Infinity:tx.sf}
   else if(alt==='C'){const c=+(val-273.15).toFixed(1);dTxt=c.toFixed(1).replace('-','−');u='°C';workTxt=(c+273.15).toFixed(1);work=+workTxt;workPlain=workTxt;sfw=countSF(workTxt);convs.push(dTxt+' °C + 273.15 = '+workTxt+' K')}
   else{const f=alt==='mL'?1000:alt==='nm'?1e9:1000,dv=roundTo(val*f,sp.p),dt=numTxt(dv,sp.p);dTxt=dt.html;work=dv/f;workTxt=numTxt(work,sp.p).html;workPlain=numTxt(work,sp.p).plain;sfw=dt.sf;
-   u=alt==='J'?u.replace('kJ','J'):alt;convs.push(dTxt+' '+u+' → '+workTxt+' '+sp.u)}
+   u=alt==='J'?u.replace('kJ','J'):alt==='gmol'?'g/mol':alt;convs.push(dTxt+' '+u+' → '+workTxt+' '+sp.u)}
   if(alt)anyAlt=anyAlt||alt;
   WP[v]=workPlain;W[v]=work;Raw[v]=alt==='C'?+dTxt.replace('−','-'):alt?roundTo(val*(alt==='nm'?1e9:1000),sp.p):work;Wh[v]=(work<0?'('+workTxt+')':workTxt);D[v]={sf:sfw,dp:prec(sp.p).dp,list:!!sp.list};
   givens.push('<span class="given'+(alt?' trap':'')+'">'+disp(v)+' = '+dTxt+(u?' '+esc(u):'')+'</span>')}
+ for(const k in q.c||{})Wh[k]=CONST_TXT[String(q.c[k][0])]||String(q.c[k][0]);
  for(const k in q.c||{})givens.push('<span class="given const">'+disp(k)+' = '+(CONST_TXT[String(q.c[k][0])]||q.c[k][0])+(q.c[k][1]?' '+q.c[k][1]:'')+'</span>');
  const expr=st.R,A=evalE(expr,W),Ar=anyAlt?evalE(expr,Raw):null;
  let pem=null,pem2=null;
@@ -869,7 +965,7 @@ function buildPlug(){const q=cur.q,V=makeValues(q);if(!V)return false;
  const sfExp=q.sf&&kn.length?Math.min(...kn.map(d=>d.sf)):null;
  const lits=(q.f.match(/\d+\.\d+/g)||[]).map(s=>s.split('.')[1].length);
  const tDp=prec(tsp.p).dp!=null,dpK=kn.filter(d=>d.dp!=null).map(d=>d.dp);
- const dpExp=tDp&&kn.length&&dpK.length===kn.length?Math.min(...dpK,...(q.lvl==='as'?lits:[])):null;
+ const dpExp=tDp?(q.lvl==='as'&&kn.length&&dpK.length===kn.length?Math.min(...dpK,...lits):prec(tsp.p).dp):null;
  const logSf=!tDp&&!q.sf&&q.lvl==='lg'&&dpK.length?Math.max(2,Math.min(...dpK)):3; /* pH 2 decimals -> 2 sig figs in [H3O+] */
  const ansTxt=tsp.list?String(Math.round(A)):sfExp?numTxt(A,sfExp).html:dpExp!=null?numTxt(A,'dp'+dpExp).html:numTxt(A,logSf).html;
  SUBS=Wh;const work=rE(expr);SUBS=null;
@@ -878,17 +974,24 @@ function buildPlug(){const q=cur.q,V=makeValues(q);if(!V)return false;
  p.innerHTML='<h3 id="plugTitle">🧮 Now plug in the numbers</h3><div class="formula"><span class="var-t">'+disp(TG)+'</span> = '+rE(expr)+'</div>'+
   '<div class="givens">'+givens.join('')+'</div>'+(anyAlt?'<p class="note-small">⚠️ Check the units. One value may need converting first.</p>':'')+
   '<form class="answer" id="ansForm" autocomplete="off"><label for="ans"><span class="var-t">'+disp(TG)+'</span> =</label><input id="ans" inputmode="text" spellcheck="false" placeholder="your answer"><span class="unit">'+esc(tsp.u)+'</span>'+
-  '<button class="btn primary" type="submit">Check</button><button class="btn" type="button" id="workBtn">Show the work</button></form><div class="tools2" style="margin-top:10px"><button class="btn" type="button" id="openCalc">🧮 Open the calculator</button></div><details class="ti" id="tiBox"><summary>🧮 TI-36X Pro keystrokes</summary>'+cur.plug.keys+'<div class="tools2"><button class="btn primary" type="button" id="playKeys">▶ Show me on the calculator</button></div></details><div class="coach" id="plugMsg" aria-live="polite" hidden></div>';
+  '<button class="btn primary" type="submit">Check answer</button></form><div class="plug-acts"><button class="btn" type="button" id="openCalc">🧮 Calculator</button><button class="btn" type="button" id="workBtn">🧭 Show the work</button></div><details class="ti" id="tiBox"><summary>🧮 TI-36X Pro keystrokes</summary>'+cur.plug.keys+'<div class="tools2"><button class="btn primary" type="button" id="playKeys">▶ Show me on the calculator</button></div></details><div class="coach" id="plugMsg" aria-live="polite" hidden></div>';
  $('ansForm').onsubmit=e=>{e.preventDefault();checkPlug()};
  $('openCalc').onclick=()=>openCalc(true);
  $('playKeys').onclick=async()=>{cur.plug.watched=true;openCalc(false);await Calc.play(cur.plug.seq);const m=$('plugMsg');m.hidden=false;m.className='coach info';m.innerHTML='Watch the screen: that is the answer before rounding. Now round it and type it in. <small>(Watching the keys counts as help, so this one earns fewer XP.)</small>'};$('workBtn').onclick=()=>revealWork(true);
  setTimeout(()=>{$('ans').focus({preventScroll:true});p.scrollIntoView({block:'nearest',behavior:'smooth'})},60);return true}
 function near(a,b,rel){return Math.abs(a-b)<=rel*Math.abs(b)}
-function checkPlug(){const c=cur.plug;if(!c||cur.phase!=='solved')return;const r=readNum($('ans').value),m=$('plugMsg');m.hidden=false;
+function plugVerdict(c,r){const A=c.A,rel=cur.q.lvl==='lg'?.02:.01;
+ const exact=c.list?Math.abs(r.v-A)<=Math.max(.06*Math.abs(A),.1):(near(r.v,A,rel)||(c.dispSf&&near(r.v,roundTo(A,c.dispSf),1e-6))||(c.dpExp!=null&&Math.abs(r.v-A)<=1.01*Math.pow(10,-c.dpExp)));
+ /* rounded correctly, just to fewer (or more) sig figs than expected: right value, sig-fig coaching */
+ const rounded=!exact&&!c.list&&r.sf>=1&&near(r.v,roundTo(A,r.sf),1e-6);return{ok:exact||rounded,rounded}}
+function showPlugMsg(){const m=$('plugMsg');m.hidden=false;setTimeout(()=>m.scrollIntoView({block:'nearest',behavior:'smooth'}),30)}
+function checkPlug(){const c=cur.plug;if(!c)return;const r=readNum($('ans').value),m=$('plugMsg');showPlugMsg();
  if(!r){m.className='coach warn';m.innerHTML='Type a number, like <b>2.45</b> or <b>3.4E-5</b>.';return}
- c.tries++;const A=c.A,rel=cur.q.lvl==='lg'?.02:.01;
- const ok=c.list?Math.abs(r.v-A)<=Math.max(.06*Math.abs(A),.1):(near(r.v,A,rel)||(c.dispSf&&near(r.v,roundTo(A,c.dispSf),1e-6))||(c.dpExp!=null&&Math.abs(r.v-A)<=1.01*Math.pow(10,-c.dpExp)));
+ if(cur.phase!=='solved'){const v=plugVerdict(c,r);m.className='coach '+(v.ok?'good':'bad');
+  m.innerHTML=(v.ok?'<b>✓ That matches!</b> ':'<b>✗ Not quite.</b> ')+'<span class="var-t">'+disp(TG)+'</span> = '+c.ansTxt+(c.unit?' '+esc(c.unit):'')+(c.sfExp&&v.ok&&r.sf!==c.sfExp?' (report '+c.sfExp+' sig figs)':'')+'. <small>Practice check, no XP. Tap <b>Next equation →</b> to keep going.</small>'+(m.dataset.work||'');return}
+ c.tries++;const A=c.A;const V=plugVerdict(c,r),ok=V.ok;
  if(ok){let xp=c.tries===1&&!c.watched?10:5,sfNote='';
+  if(V.rounded&&!c.sfExp)sfNote=' <br><small>Good rounding. The full answer is '+c.ansTxt+'.</small>';
   if(c.sfExp&&!c.list){if(r.sf===c.sfExp){xp+=5;P_.sig++;sfNote=' Right sig figs, too ('+c.sfExp+')! 🎯'}else sfNote=' <br><small>Sig figs: the fewest in your data is <b>'+c.sfExp+'</b>, so report <b>'+c.ansTxt+'</b>. You gave '+r.sf+'.</small>'}
   if(c.tries===1&&!c.watched){P_.plug++;if(c.anyAlt==='C')P_.kelvin++;else if(c.anyAlt)P_.units++}
   ddLog('Plug in',c.tries===1);
@@ -897,7 +1000,7 @@ function checkPlug(){const c=cur.plug;if(!c||cur.phase!=='solved')return;const r
  if(c.tries===1)ddLog('Plug in',false);
  let why='Not quite. Plug each number into the rearranged equation and check your calculator steps (put the bottom in parentheses).';
  const v=r.v;
- if(c.Ar!=null&&near(v,c.Ar,.02)&&!near(c.Ar,A,.02))why={C:'Looks like you used °C. Gas laws and these equations need <b>kelvin</b>: K = °C + 273.15.',mL:'Looks like you used mL. This equation needs <b>liters</b>: divide mL by 1000.',nm:'Looks like you used nm. Convert to <b>meters</b> first: 1 nm = 10⁻⁹ m.',J:'Watch the units: ΔS is in J, but ΔH is in kJ. Convert J → kJ (÷ 1000) first.'}[c.anyAlt];
+ if(c.Ar!=null&&near(v,c.Ar,.02)&&!near(c.Ar,A,.02))why={C:'Looks like you used °C. Gas laws and these equations need <b>kelvin</b>: K = °C + 273.15.',mL:'Looks like you used mL. This equation needs <b>liters</b>: divide mL by 1000.',nm:'Looks like you used nm. Convert to <b>meters</b> first: 1 nm = 10⁻⁹ m.',J:'Watch the units: ΔS is in J, but ΔH is in kJ. Convert J → kJ (÷ 1000) first.',gmol:'Use molar mass in <b>kg/mol</b> here (R = 8.314 J/(mol·K) uses kg): divide g/mol by 1000.'}[c.anyAlt];
  else if(c.pem!=null&&near(v,c.pem,.02))why='PEMDAS slip: it looks like you typed a ÷ b × c, which multiplies by the bottom value. Put the whole bottom in '+kb('(')+' '+kb(')')+' or use the '+'the '+kb(FRAC_KEY)+' fraction key.';
  else if(c.pem2!=null&&near(v,c.pem2,.02))why='PEMDAS slip: put '+kb('(')+' '+kb(')')+' around the + or − part so the calculator does it first.';
  else if(c.hasE&&(near(v,A*10,.02)||near(v,A/10,.02)))why='Off by exactly 10. '+kb('EE')+' already means “× 10 to the”, so type 6.02 '+kb('EE')+' 23, not 6.02 × 10 '+kb('EE')+' 23.';
@@ -910,7 +1013,8 @@ function checkPlug(){const c=cur.plug;if(!c||cur.phase!=='solved')return;const r
 function revealWork(giveUp){const c=cur.plug;if(!c)return;const m=$('plugMsg');m.hidden=false;
  const conv=c.convs.length?'<div class="note-small">Convert first: '+c.convs.join('; ')+'</div>':'';
  const w=conv+'<div class="work"><span class="var-t">'+disp(TG)+'</span> = '+c.work+' = <b>'+c.ansTxt+(c.unit?' '+esc(c.unit):'')+'</b></div><div class="note-small" style="margin-top:6px">On a TI-36X Pro:</div>'+c.keys;
- if(giveUp&&cur.phase==='solved'){ddLog('Plug in',false);m.className='coach info';m.innerHTML='<b>Here is the work.</b>'+w;finishProblem(false)}
+ m.dataset.work=w;
+ if(giveUp&&cur.phase==='solved'){ddLog('Plug in',false);m.className='coach info';m.innerHTML='<b>Here is the work.</b> <small>Now try typing the rounded answer to check yourself.</small>'+w;finishProblem(false);setTimeout(()=>{$('ans').focus({preventScroll:true})},50)}
  else m.innerHTML+=w}
 
 /* ---------- chapter chip, controls ---------- */
@@ -920,7 +1024,7 @@ function renderControls(){document.querySelectorAll('#course button').forEach(b=
  const chs=[...new Set(courseEqs().map(q=>q.ch[S.course]))].sort((a,b)=>a-b);if(S.chap!=='all'&&!chs.includes(+S.chap))S.chap='all';
  $('chapter').innerHTML='<option value="all">All chapters</option>'+chs.map(c=>'<option value="'+c+'"'+(String(S.chap)===String(c)?' selected':'')+'>Ch '+c+': '+esc(CH[S.course][c]||'')+'</option>').join('');
  if(!pool().length){const f=LEVELS.find(l=>pool(l[0]).length);if(f)S.lvl=f[0]}
- $('levels').innerHTML=LEVELS.map(([k,n,l])=>{const c=pool(k).length;return'<button type="button" data-l="'+k+'"'+(k===S.lvl?' class="active"':'')+(c?'':' disabled')+' aria-pressed="'+(k===S.lvl)+'">'+n+' · '+l+' <small>('+c+')</small></button>'}).join('');
+ $('levels').innerHTML=LEVELS.map(([k,n,l])=>{const c=pool(k).length,I=LVINFO[k];return'<button type="button" class="lvcard'+(k===S.lvl?' active':'')+'" data-l="'+k+'"'+(c?'':' disabled')+' aria-pressed="'+(k===S.lvl)+'"><span class="ico" style="background:'+I[3]+'">'+I[0]+'</span><span><b>'+n+' · '+I[1]+'</b><small>'+I[2]+'</small><span class="cnt">'+(c?c+' equation'+(c>1?'s':''):'None in CHEM '+S.course)+'</span></span></button>'}).join('');
  $('levels').querySelectorAll('button').forEach(b=>b.onclick=()=>{S.lvl=b.dataset.l;renderControls();newProblem()})}
 function setCourse(c){S.course=c;loadCourse(c);S.chap='all';renderControls();renderStatus();renderProgress();newProblem();save()}
 
@@ -957,7 +1061,7 @@ function sheetTab(t){document.querySelectorAll('#sheetTabs button').forEach(b=>b
 $('stage').addEventListener('click',e=>{const c=e.target.closest('[data-p]');if(c)act(+c.dataset.p)});
 $('stage').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const c=e.target.closest('[data-p]');if(c){e.preventDefault();act(+c.dataset.p)}});
 document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>onOp(b.dataset.a));
-document.querySelectorAll('[data-u]').forEach(b=>b.onclick=()=>{if(cur.phase==='solve'&&!walk)move({t:b.dataset.u})});
+document.querySelectorAll('[data-u]').forEach(b=>b.onclick=()=>{if(cur.phase==='solve'&&!walk)move(b.dataset.u==='factor'?{t:'factor',g:TG}:{t:b.dataset.u})});
 $('swapBtn').onclick=swap;
 $('undoBtn').onclick=()=>{if(hist.length&&cur.phase==='solve'){const h=hist.pop();st=h.st;cur.dist=h.dist;cur.moves=Math.max(0,cur.moves-1);sel=null;armed=null;$('last').innerHTML='Undid a step';draw();setCoach('','Back one step. What is attached to <span class="var-t">'+disp(TG)+'</span>?')}};
 $('restartBtn').onclick=()=>{if(cur.phase!=='solve')return;st=cur.st0;hist=[];cur.moves=0;sel=null;armed=null;const s=trySolve(st,TG);cur.dist=s?s.p.length:9;$('last').innerHTML='&nbsp;';draw();setCoach('','Fresh start. What is attached to <span class="var-t">'+disp(TG)+'</span>?')};
