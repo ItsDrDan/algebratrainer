@@ -218,6 +218,7 @@ dialog{border:0;border-radius:var(--r-lg);padding:0;width:min(760px,94vw);max-he
 .sheet-eq{font-family:var(--serif);font-size:1.12rem}.sheet-ch{margin:14px 0 4px;font-size:.95rem;color:var(--accent-d)}
 .toasts{position:fixed;right:14px;bottom:14px;z-index:80;display:grid;gap:8px}.toast{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px #1f2a442e;padding:10px 14px;max-width:320px;animation:tin .3s}.toast-icon{font-size:1.5rem}@keyframes tin{from{transform:translateY(12px);opacity:0}}
 </style>
+<script src="https://itsdrdan.github.io/games/brand/chemparse.v1.js"></script><!-- shared number reading (never edited; a change is a new version) -->
 <script src="https://itsdrdan.github.io/games/track.js" defer></script>
 <!-- Canvas: grow the iframe to fit the game (no inner scrollbar). Idea: Rob Gilley -->
 <script src="https://itsdrdan.github.io/games/brand/embed.js" defer></script>
@@ -491,7 +492,10 @@ function numTxt(x,p){p=prec(p);let s;
 function countSF(str){let s=String(str).trim().replace(/^[+-]/,'');const m=s.match(/^([\d.]+)(?:e[+-]?\d+)?$/i);if(!m)return 0;s=m[1];
  const hasDot=s.includes('.');let d=s.replace('.','').replace(/^0+/,'');if(!hasDot)d=d.replace(/0+$/,'');if(!d&&hasDot)return Math.max(1,(s.split('.')[1]||'').length);return Math.max(d.length,hasDot?1:0)}
 /* student input -> {v, sf} or null.  Accepts 3.45E-4, 3.45e-4, 3.45*10^-4, 3.45x10^-4, 3.45×10^-4, commas, unicode minus */
-function readNum(raw){let s=String(raw||'').trim().replace(/[\s,]/g,'').replace(/[−–]/g,'-').replace(/⁻/g,'-').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,c=>'⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c));
+/* Shared number reading: games/brand/chemparse.v1.js (loaded in <head>). If it did not load, say so instead of marking answers wrong. */
+const CP=window.ChemParse||null;if(!CP)document.addEventListener('DOMContentLoaded',()=>{const b=document.createElement('div');b.setAttribute('role','alert');b.style.cssText='position:sticky;top:0;z-index:999;background:#fff3cd;border-bottom:2px solid #e0a800;padding:12px 16px;font-weight:700;text-align:center';b.textContent='Part of this game did not load, so answers cannot be checked. Please reload the page.';document.body.prepend(b);});
+/* decimal commas ("2,5", "0,493") are not numbers; "10³" is 10^3, not 103 */
+function readNum(raw){if(CP.decimalComma(raw))return null;let s=String(raw||'').trim().replace(/^10(?=[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺])/,'10^').replace(/[\s,]/g,'').replace(/[−–]/g,'-').replace(/⁻/g,'-').replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,c=>'⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c));
  if(!s)return null;let m=s.match(/^([+-]?(?:\d+\.?\d*|\.\d+))(?:(?:\*|x|×|·)10\^?\(?([+-]?\d+)\)?|[eE]([+-]?\d+))?$/);
  if(!m){m=s.match(/^10\^?\(?([+-]?\d+)\)?$/);if(m)return{v:Math.pow(10,+m[1]),sf:1};return null}
  const e=m[2]!=null?+m[2]:m[3]!=null?+m[3]:0;return{v:+m[1]*Math.pow(10,e),sf:countSF(m[1])}}
@@ -991,7 +995,7 @@ function plugVerdict(c,r){const A=c.A,rel=cur.q.lvl==='lg'?.02:.01;
  const rounded=!exact&&!c.list&&r.sf>=1&&near(r.v,roundTo(A,r.sf),1e-6);return{ok:exact||rounded,rounded}}
 function showPlugMsg(){const m=$('plugMsg');m.hidden=false;setTimeout(()=>m.scrollIntoView({block:'nearest',behavior:'smooth'}),30)}
 function checkPlug(){const c=cur.plug;if(!c)return;const r=readNum($('ans').value),m=$('plugMsg');showPlugMsg();
- if(!r){m.className='coach warn';m.innerHTML='Type a number, like <b>2.45</b> or <b>3.4E-5</b>.';return}
+ if(!r){m.className='coach warn';m.innerHTML=CP.decimalComma($('ans').value)?'Use a period for decimals: type <b>2.5</b>, not <b>2,5</b>.':'Type a number, like <b>2.45</b> or <b>3.4E-5</b>.';return}
  if(cur.phase!=='solved'){const v=plugVerdict(c,r);m.className='coach '+(v.ok?'good':'bad');
   m.innerHTML=(v.ok?'<b>✓ That matches!</b> ':'<b>✗ Not quite.</b> ')+'<span class="var-t">'+disp(TG)+'</span> = '+c.ansTxt+(c.unit?' '+esc(c.unit):'')+(c.sfExp&&v.ok&&r.sf!==c.sfExp?' (report '+c.sfExp+' sig figs)':'')+'. <small>Practice check, no XP. Tap <b>Next equation →</b> to keep going.</small>'+(m.dataset.work||'');return}
  c.tries++;const A=c.A;const V=plugVerdict(c,r),ok=V.ok;
